@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diario>
+  <UltimaActualizacion>2024-04-11</UltimaActualizacion>
+  <noticias>
+    <noticia>
+      <titulo>Primera Noticia</titulo>
+      <cuerpo>Esta es la primera noticia del día</cuerpo>
+      <autor>Adrian</autor>
+    </noticia>
+    <noticia>
+      <titulo>Segunda Noticia</titulo>
+      <cuerpo>Esta es la segunda noticia</cuerpo>
+      <autor>Anonimo</autor>
+    </noticia>
+  </noticias>
+</diario>
