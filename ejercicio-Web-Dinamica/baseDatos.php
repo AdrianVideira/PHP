@@ -1,10 +1,10 @@
 <?php
-    function crearConexion(){
+    function crearConexion($dataBase){
         //Datos para la conexion
         $host = "localhost";
         $user = "root";
         $password = "";
-        $dataBase = "noticias";
+        //$dataBase = "noticias";
 
         //Establecemos la conexion con la base de datos
         $conexion = mysqli_connect($host, $user, $password, $dataBase);
@@ -22,7 +22,7 @@
 
     function agregarNoticia($titulo, $cuerpo, $autor){
         //Creamos la conexion
-        $DB = crearConexion();
+        $DB = crearConexion("noticias");
         //Generamos la consulta.
         $sql = "INSERT INTO noticias (Titulo, Cuerpo, Autor) VALUES ('$titulo', '$cuerpo', '$autor')";
         //Hacemos la conosulta.
@@ -38,7 +38,7 @@
     }
 
     function actualizarFicheroXML(){
-        $DB = crearConexion();
+        $DB = crearConexion("noticias");
         $actualizacion = date("Y-m-d");
         //Creamos un objeto DOMDocument y le pasamos la version y el formato
         $xml = new DOMDocument("1.0", "UTF-8");
@@ -80,7 +80,7 @@
 
     function generarHTML(){
         //Creamos la conexion con la BD
-        $DB = crearConexion();
+        $DB = crearConexion("noticias");
         //Generamos la consulta
         $sql = "SELECT * FROM noticias WHERE ID = (SELECT MAX(ID) FROM noticias)";
         //Hacemos la consulta

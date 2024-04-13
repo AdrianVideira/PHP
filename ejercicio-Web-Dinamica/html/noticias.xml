@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <diario>
-  <UltimaActualizacion>2024-04-11</UltimaActualizacion>
+  <UltimaActualizacion>2024-04-13</UltimaActualizacion>
   <noticias>
     <noticia>
       <titulo>Primera Noticia</titulo>
@@ -11,6 +11,11 @@
       <titulo>Segunda Noticia</titulo>
       <cuerpo>Esta es la segunda noticia</cuerpo>
       <autor>Anonimo</autor>
+    </noticia>
+    <noticia>
+      <titulo>Tercera Noticia</titulo>
+      <cuerpo>Esta es la tercera noticia</cuerpo>
+      <autor>Adrian</autor>
     </noticia>
   </noticias>
 </diario>
